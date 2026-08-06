@@ -1,11 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Projeto Integrador - Aquecimento Sustentável da Piscina do CEP</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+<header>
+
+    <h1>Projeto Integrador</h1>
+
+    <p>
+        Sistema Inteligente de Aquecimento Sustentável para a Piscina do CEP
+    </p>
+
+    <nav>
+
+        <a href="#piscina">Piscina</a>
+
+        <a href="#aquecimento">Aquecimento</a>
+
+        <a href="#placas">Placas Solares</a>
+
+        <a href="#otica">Óptica</a>
+
+        <a href="#robotica">Robótica</a>
+
+        <a href="#acessibilidade">Acessibilidade</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section id="piscina">
+
+<h2>A Piscina do CEP</h2>
+
+<p>
+
+A piscina do CEP é uma piscina semiolímpica de modelo antigo, utilizada para aulas de Educação Física, treinamentos esportivos e atividades recreativas. Por possuir grandes dimensões, manter sua temperatura adequada durante o ano representa um desafio tanto financeiro quanto ambiental.
+
+</p>
+
+<p>
+
+Uma piscina semiolímpica possui, em média:
+
+</p>
+
+<ul>
+
+<li>Comprimento: <strong>25 metros</strong></li>
+
+<li>Largura: <strong>12,5 metros</strong></li>
+
+<li>Profundidade média: <strong>entre 1,20 m e 2,00 m</strong></li>
+
+<li>Capacidade aproximada: <strong>450 mil litros de água</strong></li>
+
+</ul>
+
+<p>
+
+Aquecer uma quantidade tão grande de água utilizando apenas energia elétrica gera elevados custos e maior consumo energético. Por esse motivo, nosso projeto propõe uma solução sustentável baseada na utilização de placas solares e automação inteligente.
+
+</p>
+
+</section>
+
+<section id="aquecimento">
+
+<h2>Como Aquecer a Piscina?</h2>
+
+<p>
+
+Nossa proposta consiste em utilizar coletores solares térmicos como principal fonte de aquecimento da água.
+
+Durante o dia, as placas absorvem a energia proveniente do Sol e aquecem a água que circula pelo seu interior. Uma bomba hidráulica conduz essa água aquecida até a piscina.
+
+Quando a temperatura desejada for atingida, sensores desligam automaticamente o sistema, economizando energia.
+
+Nos dias nublados ou frios, um aquecimento elétrico auxiliar poderá ser acionado apenas quando necessário.
+
+</p>
+
+<div class="painel">
+
+<h3>Simulação do Sistema</h3>
+
+<p id="temperatura">
+
+Temperatura atual da água:
+<strong>24°C</strong>
+
+</p>
+
+<button onclick="aquecerPiscina()">
+
+Iniciar Aquecimento
+
+</button>
+
+<p id="resultado"></p>
+
+</div>
+
+</section>
+
+<section id="placas">
+
+<h2>Placas Solares</h2>
+
+<h3>O que são?</h3>
+
+<p>
+
+As placas solares térmicas são equipamentos desenvolvidos para captar a energia proveniente da radiação solar e transformá-la em calor.
+
+Elas são compostas por tubos internos por onde a água circula e por uma superfície absorvedora de cor escura, capaz de captar a maior quantidade possível de energia luminosa.
+
+</p>
+
+<h3>Para que servem?</h3>
+
+<p>
+
+Sua principal função é aquecer água de forma sustentável, reduzindo significativamente o consumo de energia elétrica.
+
+Além de diminuir custos para a escola, o uso da energia solar reduz a emissão de gases do efeito estufa e contribui para a preservação do meio ambiente.
+
+</p>
+
+</section>
+
+<section id="otica">
+
+<h2>Óptica Aplicada ao Projeto</h2>
+
+<h3>Absorção da Luz</h3>
+
+<p>
+
+Absorção é o fenômeno em que um material recebe a energia luminosa e a transforma em outra forma de energia, principalmente calor.
+
+As placas solares possuem superfícies pretas porque essa cor absorve praticamente toda a luz incidente, aumentando sua eficiência no aquecimento da água.
+
+</p>
+
+<h3>Reflexão da Luz</h3>
+
+<p>
+
+Reflexão ocorre quando a luz retorna ao atingir uma superfície.
+
+Materiais muito brilhantes refletem grande parte da energia luminosa, reduzindo seu aquecimento. Por isso, as placas solares evitam superfícies refletoras e utilizam revestimentos foscos.
+
+</p>
+
+<h3>Refração da Luz</h3>
+
+<p>
+
+Refração é a mudança de direção que a luz sofre ao atravessar materiais transparentes.
+
+Nas placas solares existe uma cobertura de vidro transparente que protege os componentes internos e permite a passagem da maior parte da radiação solar.
+
+</p>
+
+<h3>Disco de Newton</h3>
+
+<p>
+
+O Disco de Newton demonstra que a luz branca é formada pela combinação de todas as cores do espectro visível.
+
+Como superfícies escuras absorvem praticamente todas essas cores, elas conseguem captar mais energia luminosa, tornando o aquecimento mais eficiente.
+
+</p>
+
+<h3>Câmara Escura</h3>
+
+<p>
+
+A Câmara Escura demonstra que a luz se propaga em linha reta.
+
+Esse princípio é utilizado para posicionar corretamente as placas solares, garantindo que recebam a maior incidência possível dos raios solares ao longo do dia.
+
+</p>
+
+</section>
+
+<section id="robotica">
+
+<h2>Robótica e Automação</h2>
+
+<p>
+
+Nosso sistema pode ser totalmente automatizado utilizando sensores e atuadores.
+
+</p>
+
+<h3>Sensores</h3>
+
+<ul>
+
+<li>Sensor de temperatura da água;</li>
+
+<li>Sensor de luminosidade;</li>
+
+<li>Sensor de nível da água.</li>
+
+</ul>
+
+<h3>Atuadores</h3>
+
+<ul>
+
+<li>Bomba hidráulica;</li>
+
+<li>Válvulas automáticas;</li>
+
+<li>Aquecimento elétrico auxiliar.</li>
+
+</ul>
+
+<h3>Funcionamento</h3>
+
+<p>
+
+O sensor mede continuamente a temperatura da piscina.
+
+Caso a temperatura esteja abaixo do valor ideal, o controlador verifica se existe incidência solar suficiente.
+
+Se houver sol, a bomba faz a água circular pelas placas solares.
+
+Caso contrário, o aquecimento elétrico auxiliar é acionado.
+
+Quando a água atingir aproximadamente 30°C, todo o sistema é desligado automaticamente.
+
+</p>
+
+</section>
+
+<section id="acessibilidade">
+
+<h2>Acessibilidade Digital</h2>
+
+<p>
+
+Nosso site foi desenvolvido pensando em todos os usuários.
+
+Entre os principais recursos estão:
+
+</p>
+
+<ul>
+
+<li>Alto contraste entre texto e fundo;</li>
+
+<li>Fontes grandes e de fácil leitura;</li>
+
+<li>Menu simples e intuitivo;</li>
+
+<li>Compatibilidade com celulares e computadores;</li>
+
+<li>Imagens com texto alternativo (ALT);</li>
+
+<li>Navegação organizada.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Conclusão</h2>
+
+<p>
+
+Este projeto demonstra como a integração entre Física, Óptica, Robótica e Programação pode oferecer soluções sustentáveis para problemas reais.
+
+A utilização de coletores solares associados a sensores inteligentes reduz o consumo de energia elétrica, diminui os impactos ambientais e torna o aquecimento da piscina do CEP mais eficiente, econômico e sustentável.
+
+Além disso, o desenvolvimento deste site permite divulgar conhecimentos científicos de forma acessível para toda a comunidade escolar.
+
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+Projeto Integrador - CEP
+
+Tecnociência • Robótica • Programação • Sustentabilidade
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
